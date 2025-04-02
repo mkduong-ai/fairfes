@@ -1,12 +1,9 @@
-import random
-
 import numpy as np
 import pandas as pd
-from preprocessing.fairfes.solver import m_favorable_downsampling, m_unfavorable_downsampling, m_favorable_upsampling, m_unfavorable_upsampling
+from solver import m_favorable_downsampling, m_unfavorable_downsampling, m_favorable_upsampling, m_unfavorable_upsampling
 
 
 def downsampling(df, tp=0.5, label='y', protected_attribute='z'):
-    # NumPy Arrays
     """
     Perform downsampling to achieve fairness in the data.
 
@@ -50,7 +47,6 @@ def downsampling(df, tp=0.5, label='y', protected_attribute='z'):
 
 
 def upsampling(df, tp=0.5, label='y', protected_attribute='z'):
-    # NumPy Arrays
     """
     Upsamples the dataset to balance the favorable outcomes to the target probability tp.
 
