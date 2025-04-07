@@ -8,8 +8,8 @@ This repository provides the code for making decision-makers fair.
 from helper import *
 from samplers import upsamling, downsampling
 
-# Create Sample DataFrame with acceptance rates of 20%, 40% and 70%
-df = generate_dataframe(100000, 0.2, 0.4, 0.7) 
+# Create Sample DataFrame with acceptance rates of 30%, 60% and 80% of the social groups
+df = generate_dataframe(100000, 0.3, 0.6, 0.8) 
 print_pisy0(df)  # [0.7956014362657091, 0.5997706422018348, 0.3013993541442411]
 
 # Use upsampling with a desired target acceptance rate of 0.5 for each social group
